@@ -1,10 +1,4 @@
-# Project base for Eleventy Sites
-
-Includes static page template and home page. Also includes gulp setup for SCSS, fonts and images.
-
-<p style="text-transform: uppercase;"><strong>Please don’t submit issues or PRs. I’m just sharing this for people that might want a decent starter. This isn’t open source: just free. Thanks.</strong></p>
-
-ℹ️ If you want to learn how it works, go ahead and take my [Eleventy course](//swop.link/11ty)
+# A Human Future sit
 
 ## Getting started
 
