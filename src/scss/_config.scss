@@ -1,27 +1,18 @@
 /**
- * BASE SIZE
- * All calculations are based on this. It’s recommended that
- * you keep it at 1rem because that is the root font size. You
- * can set it to whatever you like and whatever unit you like.
- */
-$gorko-base-size: 1rem;
-
-/**
  * SIZE SCALE
  * This is a Perfect Fourth scale that powers all the utilities that
  * it is relevant for (font-size, margin, padding). All items are
  * calcuated off the base size, so change that and cascade across
  * your whole project.
+
+ * Generator: https://utopia.fyi/type/calculator?c=320,16,1.2,1140,23,1.55,4,0,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l
  */
 $gorko-size-scale: (
-  '300': $gorko-base-size * 0.75,
-  '400': $gorko-base-size,
-  '500': $gorko-base-size * 1.33,
-  '600': $gorko-base-size * 1.77,
-  '700': $gorko-base-size * 2.36,
-  '800': $gorko-base-size * 3.15,
-  '900': $gorko-base-size * 4.2,
-  'major': $gorko-base-size * 5.6
+  '400': clamp(1rem, 0.83rem + 0.85vw, 1.44rem),
+  '500': clamp(1.2rem, 0.8rem + 2.01vw, 2.23rem),
+  '600': clamp(1.44rem, 0.65rem + 3.93vw, 3.45rem),
+  '700': clamp(1.73rem, 0.31rem + 7.07vw, 5.35rem),
+  '800': clamp(2.07rem, -0.36rem + 12.14vw, 8.3rem)
 );
 
 /**
@@ -30,13 +21,10 @@ $gorko-size-scale: (
  * You can also use them to power borders, fills or shadows, for example.
  */
 $gorko-colors: (
-  'dark': #38445b,
-  'dark-shade': #263147,
-  'dark-glare': #505c73,
-  'light': #efefef,
-  'light-shade': #fdfdfd,
-  'light-glare': #fdfbf3,
-  'primary': #513aa6
+  'dark': #000000,
+  'light': #ffffff,
+  'primary': #00ff19,
+  'secondary': #000aff
 );
 
 /**
@@ -62,8 +50,7 @@ $gorko-config: (
   ),
   'font': (
     'items': (
-      'base': 'sans-serif',
-      'sans': '"Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
+      'base': '"Maison Neue", Arial, sans-serif'
     ),
     'output': 'standard',
     'property': 'font-family'
