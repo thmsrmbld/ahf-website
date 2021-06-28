@@ -125,8 +125,11 @@ marquee {
 }
 
 // Import blocks
+@import 'blocks/eyebrow';
+@import 'blocks/headline';
 
 // Import utilities
+@import 'utilities/dot';
 @import 'utilities/flow';
 @import 'utilities/visually-hidden';
 @import 'utilities/wrapper';

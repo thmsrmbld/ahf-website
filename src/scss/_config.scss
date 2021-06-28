@@ -5,9 +5,10 @@
  * calcuated off the base size, so change that and cascade across
  * your whole project.
 
- * Generator: https://utopia.fyi/type/calculator?c=320,16,1.2,1140,23,1.55,4,0,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l
+ * Generator: https://utopia.fyi/type/calculator/?c=320,16,1.2,1140,23,1.55,4,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l
  */
 $gorko-size-scale: (
+  '300': clamp(0.83rem, 0.8rem + 0.18vw, 0.93rem),
   '400': clamp(1rem, 0.83rem + 0.85vw, 1.44rem),
   '500': clamp(1.2rem, 0.8rem + 2.01vw, 2.23rem),
   '600': clamp(1.44rem, 0.65rem + 3.93vw, 3.45rem),
