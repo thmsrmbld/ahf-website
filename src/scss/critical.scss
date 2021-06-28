@@ -17,6 +17,10 @@ body {
   @include apply-utility('font', 'base');
 }
 
+* {
+  cursor: url('/images/cursor.svg'), auto;
+}
+
 a:not([class]) {
   color: currentColor;
 }
