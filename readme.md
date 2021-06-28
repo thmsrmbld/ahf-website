@@ -1,4 +1,4 @@
-# A Human Future sit
+# A Human Future site
 
 ## Getting started
 

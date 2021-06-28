@@ -7,9 +7,6 @@
 @import 'reset';
 
 // Global styles start
-:root {
-  --flow-space: #{get-size('600')};
-}
 
 body {
   background: get-color('light');
@@ -43,6 +40,84 @@ h4 {
 
 h1 {
   font-size: get-size('800');
+}
+
+h2 {
+  font-size: get-size('700');
+}
+
+h3 {
+  font-size: get-size('600');
+}
+
+h4 {
+  font-size: get-size('500');
+}
+
+em {
+  font-style: normal;
+  text-decoration: underline;
+  text-decoration-color: get-color('primary');
+  text-decoration-thickness: 1ex;
+  text-underline-offset: -1.25ex;
+  text-decoration-skip-ink: none;
+  // To enable this in webkit, uncomment
+  // text-decoration-skip: none;
+}
+
+a:not([class]) {
+  color: get-color('secondary');
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul:not([class]) {
+  padding: 0 0 0 1.2em;
+}
+
+ol:not([class]) {
+  padding: 0 0 0 2.2em;
+
+  @include apply-utility('font', 'mono');
+}
+
+ul:not([class]),
+ol:not([class]) {
+  @include apply-utility('font', 'mono');
+
+  > * + * {
+    margin-top: 0.5em;
+  }
+}
+
+p,
+li,
+blockquote {
+  @include apply-utility('measure', 'long');
+}
+
+marquee {
+  text-transform: uppercase;
+
+  ul,
+  li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  ul:not([class]) > li + li {
+    margin-top: 0;
+  }
+
+  li + li::before {
+    content: '·';
+    color: get-color('secondary');
+    font-size: 2em;
+  }
 }
 
 // Import blocks

@@ -50,7 +50,8 @@ $gorko-config: (
   ),
   'font': (
     'items': (
-      'base': '"Maison Neue", Arial, sans-serif'
+      'base': '"Maison Neue", Arial, sans-serif',
+      'mono': '"Roboto Mono", monospace'
     ),
     'output': 'standard',
     'property': 'font-family'
@@ -71,8 +72,6 @@ $gorko-config: (
   ),
   'measure': (
     'items': (
-      'micro': '10ch',
-      'compact': '30ch',
       'short': '40ch',
       'long': '65ch'
     ),
@@ -83,14 +82,6 @@ $gorko-config: (
     'items': $gorko-size-scale,
     'output': 'responsive',
     'property': 'font-size'
-  ),
-  'weight': (
-    'items': (
-      'normal': 400,
-      'bold': 900
-    ),
-    'output': 'standard',
-    'property': 'font-weight'
   ),
   'breakpoints': (
     'md': '(min-width: 37em)',

@@ -4,3 +4,10 @@
   font-weight: 400;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Roboto Mono';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/Roboto_Mono.woff2') format('woff2');
+}
