@@ -6,6 +6,9 @@
 
 @import 'reset';
 
+// Global vars
+$global-gutter: #{get-size('400')};
+
 // Global styles start
 
 body {
@@ -124,10 +127,15 @@ marquee {
   }
 }
 
+// Import compositions
+
 // Import blocks
+@import 'blocks/brand';
 @import 'blocks/button';
 @import 'blocks/eyebrow';
 @import 'blocks/headline';
+@import 'blocks/site-head';
+@import 'blocks/skip-link';
 
 // Import utilities
 @import 'utilities/dot';
