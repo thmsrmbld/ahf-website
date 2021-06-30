@@ -1,0 +1,27 @@
+.burger-menu {
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto;
+    gap: $global-gutter;
+    padding: 0;
+    line-height: 1;
+  }
+}
+
+// No JS means get rid of the interactive elements
+.burger-menu:not([status]) {
+  .burger-menu__trigger {
+    display: none;
+  }
+}
+
+// Layout targetted on the custom element, rather than the block
+burger-menu {
+  display: flex;
+  padding-inline: $global-gutter;
+
+  > * {
+    margin-inline-start: auto;
+  }
+}

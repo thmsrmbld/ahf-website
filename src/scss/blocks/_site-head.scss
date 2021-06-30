@@ -1,8 +1,9 @@
 .site-head {
   --site-head-space: 1rem;
-  border-bottom: 1px solid;
-  padding-block: var(--site-head-space);
   line-height: 1;
+  background: get-color('light');
+  position: sticky;
+  top: 0;
 
   &__inner,
   &__interactions {
@@ -13,11 +14,13 @@
   }
 
   &__interactions {
-    flex-basis: 12.5rem;
+    //flex-basis: 12.5rem;
   }
 
   &__inner {
     flex-wrap: wrap;
+    padding-block: var(--site-head-space);
+    border-bottom: 1px solid;
   }
 
   @include media-query('md') {

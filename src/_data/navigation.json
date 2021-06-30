@@ -5,8 +5,16 @@
       "url": "/"
     },
     {
-      "text": "About",
-      "url": "/about/"
+      "text": "Articles",
+      "url": "#"
+    },
+    {
+      "text": "Careers",
+      "url": "#"
+    },
+    {
+      "text": "Contact",
+      "url": "#"
     }
   ]
 }

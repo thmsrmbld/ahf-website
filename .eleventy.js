@@ -3,6 +3,7 @@ module.exports = config => {
   config.setUseGitIgnore(false);
 
   config.addPassthroughCopy('./src/fonts');
+  config.addPassthroughCopy('./src/js');
 
   return {
     markdownTemplateEngine: 'njk',
