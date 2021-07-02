@@ -1,3 +1,4 @@
+// Default no-js status
 .burger-menu {
   &__nav {
     display: flex;
@@ -23,5 +24,63 @@ burger-menu {
 
   > * {
     margin-inline-start: auto;
+  }
+}
+
+// If everything works, get the proper styles going
+// (status) attribute is added by the web component
+.burger-menu[status] {
+  --burger-menu-width: calc(100% - 10vw);
+
+  .burger-menu__panel {
+    padding: get-size('700') get-size('600');
+    width: var(--burger-menu-width);
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: get-color('primary');
+    z-index: -1;
+  }
+
+  .burger-menu__nav {
+    /// I don't like extending classes but this needs to flow
+    /// and you only live once
+    @extend .flow;
+
+    --flow-space: #{get-size('400')};
+    display: block;
+    font-size: get-size('600');
+
+    a {
+      text-decoration: none;
+      display: block;
+
+      &:hover {
+        transform: translateX(0.5ch);
+        transition: 300ms transform $global-bezier;
+      }
+    }
+
+    a:not(:hover) {
+      color: get-color('dark');
+    }
+
+    [data-type='secondary'] {
+      font-size: get-size('500');
+    }
+
+    // Add a touch more flow space to the first
+    // type of secondary to push it away from primary
+    [data-type='primary'] + [data-type='secondary'] {
+      --flow-space: #{get-size('600')};
+    }
+  }
+}
+
+@include media-query('md') {
+  .burger-menu[status] {
+    --burger-menu-width: 30rem;
   }
 }

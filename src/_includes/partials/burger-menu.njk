@@ -2,7 +2,7 @@
   <nav aria-label="primary">
     <ul role="list" class="burger-menu__nav">
       {% for item in navigation.items %}
-      <li>
+      <li data-type="{{ item.type }}">
         <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
       </li>
       {% endfor %}

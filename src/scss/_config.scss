@@ -29,6 +29,12 @@ $gorko-colors: (
 );
 
 /**
+ * GLOBAL VARIABLES
+ */
+$global-gutter: #{map-get($gorko-size-scale, '400')};
+$global-bezier: cubic-bezier(0.42, 0, 0.32, 1.17);
+
+/**
  * CORE CONFIG
  * This powers everything from utility class generation to breakpoints
  * to enabling/disabling pre-built components/utilities.

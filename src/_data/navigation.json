@@ -2,19 +2,33 @@
   "items": [
     {
       "text": "Home",
-      "url": "/"
+      "url": "/",
+      "type": "primary"
     },
     {
       "text": "Articles",
-      "url": "#"
+      "url": "#",
+      "type": "primary"
     },
     {
       "text": "Careers",
-      "url": "#"
+      "url": "#",
+      "type": "primary"
     },
     {
       "text": "Contact",
-      "url": "#"
+      "url": "#",
+      "type": "primary"
+    },
+    {
+      "text": "Github",
+      "url": "#",
+      "type": "secondary"
+    },
+    {
+      "text": "Twitter",
+      "url": "#",
+      "type": "secondary"
     }
   ]
 }
