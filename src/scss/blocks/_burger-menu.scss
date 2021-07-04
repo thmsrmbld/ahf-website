@@ -1,3 +1,5 @@
+$burger-menu-transition: 600ms;
+
 // Default no-js status
 .burger-menu {
   &__nav {
@@ -30,7 +32,7 @@ burger-menu {
 // If everything works, get the proper styles going
 // (status) attribute is added by the web component
 .burger-menu[status] {
-  --burger-menu-width: calc(100% - 10vw);
+  padding-top: get-size('400');
 
   .burger-menu__panel {
     padding: get-size('700') get-size('600');
@@ -39,7 +41,7 @@ burger-menu {
     display: block;
     top: 0;
     bottom: 0;
-    right: 0;
+    left: 100%;
     background: get-color('primary');
     z-index: -1;
   }
@@ -52,6 +54,10 @@ burger-menu {
     --flow-space: #{get-size('400')};
     display: block;
     font-size: get-size('600');
+
+    // The default state is "hidden"
+    opacity: 0;
+    transform: translateX(1em);
 
     a {
       text-decoration: none;
@@ -79,8 +85,30 @@ burger-menu {
   }
 }
 
+// The burger menu parent that has data-burger-menu-status is likely the <body> element.
+// It is the element that will shift left when the burger menu opens
+[data-burger-menu-status] {
+  --burger-menu-width: calc(100% - 10vw);
+  transition: transform $burger-menu-transition $global-bezier;
+}
+
+// When the burger menu is open, we shift the parent left
+[data-burger-menu-status='open'] {
+  transform: translateX(
+    calc(var(--burger-menu-width) * -1)
+  ); // Converts it to a negative value
+
+  .burger-menu__nav {
+    // We're using !important here because the specificity is identical to it's closed state
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+    transition: all $burger-menu-transition $global-bezier;
+    transition-delay: $burger-menu-transition * 1.5;
+  }
+}
+
 @include media-query('md') {
-  .burger-menu[status] {
+  [data-burger-menu-status] {
     --burger-menu-width: 30rem;
   }
 }

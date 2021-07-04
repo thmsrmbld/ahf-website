@@ -8,6 +8,11 @@
 
 // Global styles start
 
+html {
+  // This is so you don't get a flash of white with the burger menu easing
+  background: get-color('primary');
+}
+
 body {
   background: get-color('light');
   color: get-color('dark');

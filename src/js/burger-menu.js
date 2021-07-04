@@ -6,6 +6,9 @@ class BurgerMenu extends HTMLElement {
 
     const self = this;
 
+    // The element that shifts to show the menu
+    self.parent = document.body;
+
     this.state = new Proxy(
       {
         status: 'open',
@@ -120,10 +123,12 @@ class BurgerMenu extends HTMLElement {
     switch (this.state.status) {
       case 'closed':
         this.trigger.setAttribute('aria-expanded', 'false');
+        this.parent.setAttribute('data-burger-menu-status', 'closed');
         break;
       case 'open':
       case 'initial':
         this.trigger.setAttribute('aria-expanded', 'true');
+        this.parent.setAttribute('data-burger-menu-status', 'open');
         break;
     }
   }
