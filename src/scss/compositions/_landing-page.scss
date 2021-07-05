@@ -1,0 +1,18 @@
+.landing-page {
+  &__section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__intro {
+    justify-content: space-between;
+
+    > figure {
+      flex-basis: 40rem;
+    }
+
+    > .flow {
+      flex-basis: 30rem;
+    }
+  }
+}
