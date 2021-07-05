@@ -4,6 +4,7 @@
   background: get-color('light');
   position: sticky;
   top: 0;
+  z-index: 1;
 
   &__inner,
   &__interactions {
@@ -19,7 +20,8 @@
 
   &__inner {
     flex-wrap: wrap;
-    padding-block: var(--site-head-space);
+    padding-top: var(--site-head-space);
+    padding-bottom: var(--site-head-space);
     border-bottom: 1px solid;
   }
 

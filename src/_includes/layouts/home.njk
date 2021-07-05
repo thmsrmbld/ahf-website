@@ -1,7 +1,17 @@
 {% extends "layouts/base.njk" %} 
 
 {% block content %}
-<div class="wrapper flow">
-
+<div class="wrapper">
+  <article class="hero">
+    <h1 class="hero__title"><em>A Human Future</em> is a software development studio.</h1>
+    <div class="[ hero__summary ] [ flow flow-space-300 ]">
+      <p class="font-mono color-primary text-300" aria-hidden="true" role="presentation">[Hello]</p>
+      <p>We build digital <em>products</em>, <em>platforms</em> and <em>prototypes</em> that help motivated organisations pull the future towards them, faster.</p>
+    </div>
+    <footer class="hero__footer">
+      <p class="font-mono color-primary text-300" aria-hidden="true" role="presentation">CBG & LDN & BER<sup>[2]</sup></p>
+      <button class="[ link-button ] [ text-300 ]">Launch Terminal _></button>
+    </footer>
+  </article>
 </div>
 {% endblock %}
