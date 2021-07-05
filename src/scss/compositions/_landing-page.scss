@@ -1,18 +1,49 @@
 .landing-page {
-  &__section {
+  counter-reset: eyebrow;
+
+  &__region {
     display: flex;
     flex-wrap: wrap;
   }
 
   &__intro {
     justify-content: space-between;
+    margin-top: get-size('700');
 
     > figure {
       flex-basis: 40rem;
     }
 
-    > .flow {
+    > section {
+      --flow-space: #{get-size('400')};
       flex-basis: 30rem;
+    }
+
+    p {
+      max-width: 30ch;
+    }
+  }
+
+  &__bridge {
+    &,
+    .headline {
+      display: grid;
+      grid-template-columns: 4.5rem minmax(0, auto);
+      gap: get-size('400') get-size('400');
+    }
+
+    .dot {
+      max-width: 4.5rem;
+      max-height: 4.5rem;
+      transform: translateY(-0.2ex); // Cheeky optical adjustment
+    }
+
+    .eyebrow {
+      grid-column: 2/3;
+    }
+
+    .headline {
+      grid-column: 1/3;
     }
   }
 }

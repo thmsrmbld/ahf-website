@@ -133,6 +133,7 @@ marquee {
 }
 
 // Import compositions
+@import 'compositions/headline';
 @import 'compositions/hero';
 @import 'compositions/landing-page';
 
@@ -141,7 +142,6 @@ marquee {
 @import 'blocks/burger-menu';
 @import 'blocks/button';
 @import 'blocks/eyebrow';
-@import 'blocks/headline';
 @import 'blocks/link-button';
 @import 'blocks/site-head';
 @import 'blocks/skip-link';

@@ -24,8 +24,3 @@
     left: 0;
   }
 }
-
-// Reduce space between eyebrow and immediate siblings
-.eyebrow + * {
-  --flow-space: 0.5rem;
-}
