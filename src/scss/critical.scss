@@ -1,6 +1,9 @@
 // First up: config and functions
 @import 'config';
 
+// Disable util class generator because we'll render them at the end
+$generate-utility-classes: false;
+
 // Next: pull in gorko for design tokens
 @import '../../node_modules/gorko/gorko.scss';
 
@@ -147,3 +150,6 @@ marquee {
 @import 'utilities/flow';
 @import 'utilities/visually-hidden';
 @import 'utilities/wrapper';
+
+// Render gorko utilities
+@include generate-utility-classes();
