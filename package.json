@@ -4,7 +4,9 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "start": "npx gulp && concurrently 'npx gulp watch' 'npx eleventy --serve --quiet'",
+    "sass:process": "sass src/scss/global.scss dist/css/global.css",
+    "sass:watch": "npm run sass:process -- --watch",
+    "start": "npm run sass:process && concurrently 'npm run sass:watch' 'npx eleventy --serve --quiet'",
     "production": "NODE_ENV=production npx gulp && NODE_ENV=production eleventy"
   },
   "keywords": [],

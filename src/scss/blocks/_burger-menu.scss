@@ -43,7 +43,11 @@ burger-menu {
     bottom: 0;
     left: 100%;
     background: get-color('primary');
-    z-index: -1;
+
+    nav {
+      position: sticky;
+      top: get-size('600');
+    }
   }
 
   .burger-menu__nav {
