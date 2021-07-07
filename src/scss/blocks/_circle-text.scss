@@ -1,0 +1,13 @@
+.circle-text {
+  text-transform: uppercase;
+  font-size: 3.5rem; // We're using rems because SVG aint diggin' clamp
+  width: 12rem;
+  height: 12rem;
+  transform: rotate(50deg);
+
+  @include apply-utility('font', 'mono');
+
+  text {
+    fill: get-color('secondary');
+  }
+}
