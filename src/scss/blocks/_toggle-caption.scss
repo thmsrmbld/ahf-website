@@ -5,6 +5,7 @@
     position: absolute;
     top: 50%;
     left: get-size('600');
+    text-align: right;
 
     > p {
       position: relative;
@@ -30,6 +31,7 @@
       top: -6rem;
       left: auto;
       transform-origin: right top;
+      text-align: left;
     }
   }
 

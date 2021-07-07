@@ -85,18 +85,18 @@ a:not([class]) {
   }
 }
 
-ul:not([class]) {
+ul:not([role]) {
   padding: 0 0 0 1.2em;
 }
 
-ol:not([class]) {
+ol:not([role]) {
   padding: 0 0 0 2.2em;
 
   @include apply-utility('font', 'mono');
 }
 
-ul:not([class]),
-ol:not([class]) {
+ul:not([role]),
+ol:not([role]) {
   @include apply-utility('font', 'mono');
 
   > * + * {

@@ -22,7 +22,6 @@ $burger-menu-transition: 600ms;
 // Layout targetted on the custom element, rather than the block
 burger-menu {
   display: flex;
-  padding-inline: $global-gutter;
 
   > * {
     margin-inline-start: auto;

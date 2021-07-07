@@ -1,5 +1,6 @@
 .landing-page {
   counter-reset: eyebrow;
+  padding-bottom: get-size('800');
 
   &__region {
     display: flex;
@@ -7,17 +8,12 @@
     flex-wrap: wrap;
   }
 
-  &__intro {
+  &__content-pair {
     justify-content: space-between;
     margin-top: get-size('400');
 
     > figure {
       flex-basis: 40rem;
-    }
-
-    > section {
-      --flow-space: #{get-size('400')};
-      flex-basis: 30rem;
     }
 
     p {
@@ -33,12 +29,6 @@
       gap: get-size('400') get-size('400');
     }
 
-    .dot {
-      max-width: 4.5rem;
-      max-height: 4.5rem;
-      transform: translateY(-0.2ex); // Cheeky optical adjustment
-    }
-
     .eyebrow {
       grid-column: 2/3;
     }
@@ -46,5 +36,29 @@
     .headline {
       grid-column: 1/3;
     }
+  }
+
+  &__close-out {
+    display: flex;
+    justify-content: space-between;
+
+    .headline {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+    }
+  }
+
+  &__close-out,
+  &__content-pair {
+    section {
+      --flow-space: #{get-size('400')};
+      flex-basis: 30rem;
+    }
+  }
+
+  .dot {
+    max-width: 4.5rem;
+    max-height: 4.5rem;
+    transform: translateY(-0.2ex); // Cheeky optical adjustment
   }
 }
