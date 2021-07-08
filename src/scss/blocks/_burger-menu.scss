@@ -43,6 +43,9 @@ burger-menu {
     left: 100%;
     background: get-color('primary');
 
+    // Adds a little extra so the easing doesn't expose the background
+    box-shadow: 20px 0px 0px get-color('primary');
+
     nav {
       position: sticky;
       top: get-size('600');

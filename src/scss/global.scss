@@ -11,16 +11,12 @@ $generate-utility-classes: false;
 
 // Global styles start
 
-html {
-  // This is so you don't get a flash of white with the burger menu easing
-  background: get-color('primary');
-}
-
 body {
   background: get-color('light');
   color: get-color('dark');
   line-height: 1.5;
   font-size: get-size('400');
+  overflow-x: hidden;
 
   @include apply-utility('font', 'base');
 }
