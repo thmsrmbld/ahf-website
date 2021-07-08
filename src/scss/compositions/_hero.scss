@@ -1,7 +1,6 @@
 .hero {
   display: grid;
   grid-template-columns: 100%;
-  min-height: 80vh;
   gap: get-size('400') 0;
   padding: get-size('300') 0 get-size('500') 0;
 
@@ -12,9 +11,10 @@
     gap: 0.5rem;
   }
 
-  @include media-query('md') {
+  @include media-query('lg') {
     grid-template-columns: repeat(12, 1fr);
     gap: 0 $global-gutter;
+    min-height: 80vh;
 
     &__title,
     &__footer {

@@ -1,7 +1,7 @@
 {% extends "layouts/base.njk" %} 
 
 {% macro circleText(text, id) %}
-<svg class="circle-text" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+<svg class="[ circle-text ] [ box-hidden md:box-block ]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
   <defs>
     <path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="{{ id }}">
     </path>
@@ -22,7 +22,7 @@
     </div>
     <footer class="hero__footer">
       <p class="font-mono color-primary text-300" aria-hidden="true" role="presentation">CBG & LDN & BER<sup>[2]</sup></p>
-      <button class="[ link-button ] [ text-300 ]">Launch Terminal _></button>
+      <button class="[ link-button ] [ text-300 box-hidden md:box-inline-block ]">Launch Terminal _></button>
     </footer>
   </article>
 </div>
@@ -76,7 +76,7 @@
         <figcaption class="[ toggle-caption__content ] [ flow ] [ leading-flat flow-space-300 ]">
           <p class="text-500" lang="ja">二兎を追う者は一兎をも得ず</p>
           <button class="[ link-button ] [ font-mono text-300 color-light ]" aria-label="Translate">[Translate]</button>
-          <svg width="277" height="18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <svg class="box-hidden md:box-block" width="277" height="18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
             <path d="M.825 3.275H3v4.2h4.215v-4.2H9.39V14H7.215V9.275H3V14H.825V3.275zM268.825 3.275h7.68V5.12H271V7.7h4.665v1.86H271V14h-2.175V3.275z" fill="#00FF19"/>
             <path stroke="#00FF19" stroke-width="2" d="M22 1h233v16H22z"/>
             <path fill="#00FF19" d="M21 12h235v2H21zM21 8h235v2H21zM21 4h235v2H21z"/>

@@ -45,6 +45,15 @@ $gorko-config: (
     'output': 'standard',
     'property': 'background'
   ),
+  'box': (
+    'items': (
+      'hidden': 'none',
+      'block': 'block',
+      'inline-block': 'inline-block'
+    ),
+    'output': 'responsive',
+    'property': 'display'
+  ),
   'color': (
     'items': $gorko-colors,
     'output': 'standard',

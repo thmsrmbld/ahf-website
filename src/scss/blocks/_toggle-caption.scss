@@ -25,14 +25,10 @@
       }
     }
 
-    > svg {
-      display: block;
-    }
-
     &[data-direction='vertical'] {
       transform: rotate(-90deg);
       right: 10rem;
-      top: -6rem;
+      top: 2rem;
       left: auto;
       transform-origin: right top;
       text-align: left;
@@ -43,9 +39,13 @@
     }
   }
 
-  @include media-query('md') {
+  @include media-query('lg') {
     &__content {
       left: -5rem;
+
+      &[data-direction='vertical'] {
+        top: -6rem;
+      }
     }
   }
 }
