@@ -1,0 +1,26 @@
+.tv-decor {
+  position: relative;
+
+  picture {
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      background: get-color('secondary');
+      mix-blend-mode: screen;
+      width: 85%;
+      height: 40%;
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .circle-text {
+    position: absolute;
+    bottom: -4rem;
+    right: -6rem;
+  }
+}

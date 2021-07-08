@@ -137,11 +137,14 @@ marquee {
 @import 'compositions/hero';
 @import 'compositions/landing-page';
 
+// Import decorative stuff
+@import 'decor/tv-decor';
+@import 'decor/circle-text';
+
 // Import blocks
 @import 'blocks/brand';
 @import 'blocks/burger-menu';
 @import 'blocks/button';
-@import 'blocks/circle-text';
 @import 'blocks/eyebrow';
 @import 'blocks/link-button';
 @import 'blocks/site-head';

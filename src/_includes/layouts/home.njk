@@ -35,7 +35,7 @@
           <source srcset="/images/home-1.webp" type="image/webp" />
           <img src="/images/home-1.jpg" alt="ADD PROPER ALT" /> 
         </picture>
-        <figcaption class="[ toggle-caption__content ] [ leading-flat ]" data-direction="vertical">
+        <figcaption class="[ toggle-caption__content ] [ flow ] [ leading-flat flow-space-300 ]" data-direction="vertical">
           <button class="[ link-button ] [ font-mono text-300 color-light ]" aria-label="Translate">[Translate]</button>
           <p class="text-500" lang="ja">二兎を追う者は一兎をも得ず</p>
         </figcaption>
@@ -44,12 +44,14 @@
         <h2 class="eyebrow">Who we are</h2>
         <p>A Human Future is a remote team of software developers, user experience specialists and product development experts.  HQ is in Cambridge, England, but that’s usually not very important, because we are, indeed, Extremely Online.</p>
         <p>The studio exists with a singular calling - to meet nasty digital problems with modern, elegant solutions - and launch brilliant products that help our clients grow quickly, intentionally, and safely.</p>
-        <picture class="flow-space-600">
-          <source srcset="/images/home-2.avif" type="image/avif" />
-          <source srcset="/images/home-2.webp" type="image/webp" />
-          <img src="/images/home-2.jpg" alt="ADD PROPER ALT" /> 
-        </picture>
-        {{ circleText('There’s a ghost in the machine', 'ghost-text')}}
+        <div class="tv-decor">
+          <picture class="flow-space-600">
+            <source srcset="/images/home-2.avif" type="image/avif" />
+            <source srcset="/images/home-2.webp" type="image/webp" />
+            <img src="/images/home-2.jpg" alt="ADD PROPER ALT" /> 
+          </picture>
+          {{ circleText('There’s a ghost in the machine', 'ghost-text')}}
+        </div>
       </section>
     </div>
     <div class="landing-page__bridge">
@@ -71,9 +73,14 @@
           <source srcset="/images/home-3.webp" type="image/webp" />
           <img src="/images/home-3.jpg" alt="ADD PROPER ALT" /> 
         </picture>
-        <figcaption class="[ toggle-caption__content ] [ leading-flat ]">
+        <figcaption class="[ toggle-caption__content ] [ flow ] [ leading-flat flow-space-300 ]">
           <p class="text-500" lang="ja">二兎を追う者は一兎をも得ず</p>
           <button class="[ link-button ] [ font-mono text-300 color-light ]" aria-label="Translate">[Translate]</button>
+          <svg width="277" height="18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <path d="M.825 3.275H3v4.2h4.215v-4.2H9.39V14H7.215V9.275H3V14H.825V3.275zM268.825 3.275h7.68V5.12H271V7.7h4.665v1.86H271V14h-2.175V3.275z" fill="#00FF19"/>
+            <path stroke="#00FF19" stroke-width="2" d="M22 1h233v16H22z"/>
+            <path fill="#00FF19" d="M21 12h235v2H21zM21 8h235v2H21zM21 4h235v2H21z"/>
+          </svg>
         </figcaption>
       </figure> 
     </div>
@@ -107,17 +114,19 @@
     </div>
     <h2 class="eyebrow">Tools & toys</h2>
     <div class="landing-page__close-out">
-      <h3 class="[ headline ] [ text-800 flow-space-400 ]">
+      <div class="[ headline ] [ text-800 flow-space-400 leading-flat ]" aria-hidden="true">
         <span class="dot" role="presentation"></span>
-        <span>Techno-<br />babble.</span>
-      </h3> 
+        <div>
+          <span>Techno-</span><br /><span>babble.</span>
+        </div>
+      </div> 
       <section class="flow">
         <p>We’re a speciality Python & Django house, but we work with all sorts of other tools too - whatever’s the most appropriate for each project’s problem space.</p>
         <p>And we’re real champions of open-source - so your products have low running costs, are easy to extend, and can be supported by an expert community into the long-term.</p> 
       </section>
-      <aside>
-        <h4 class="font-mono color-primary text-300">Tech</h4>
-        <ul role="list">
+      <aside class="flow">
+        <p class="font-mono color-primary text-300 tt-upper" aria-hidden="true" role="presentation">Tech <sup>[9]</sup></p>
+        <ul role="list" class="text-500 flow-space-300">
          <li>Python</li>
          <li>Django</li>
          <li>HTML5</li>

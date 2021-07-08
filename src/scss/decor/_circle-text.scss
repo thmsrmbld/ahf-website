@@ -3,7 +3,7 @@
   font-size: 3.5rem; // We're using rems because SVG aint diggin' clamp
   width: 12rem;
   height: 12rem;
-  transform: rotate(50deg);
+  transform: rotate(45deg);
 
   @include apply-utility('font', 'mono');
 

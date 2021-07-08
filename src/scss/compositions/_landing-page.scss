@@ -26,6 +26,15 @@
       --flow-space: #{get-size('400')};
       flex-basis: 30rem;
     }
+
+    // Makes the techo babble bit indented
+    .headline span:not([class]) {
+      display: inline-block;
+    }
+
+    .headline span:not([class]):last-child {
+      margin-inline-start: 2em;
+    }
   }
 
   &__content-pair {

@@ -9,7 +9,7 @@
   position: relative;
 
   &::before {
-    content: counter(eyebrow, decimal-leading-zero);
+    content: '0' counter(eyebrow, decimal-leading-zero);
     color: get-color('primary');
   }
 

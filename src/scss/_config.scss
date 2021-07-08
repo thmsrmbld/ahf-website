@@ -52,7 +52,7 @@ $gorko-config: (
   ),
   'flow-space': (
     'items': $gorko-size-scale,
-    'output': 'responsive',
+    'output': 'standard',
     'property': '--flow-space'
   ),
   'font': (
@@ -65,7 +65,7 @@ $gorko-config: (
   ),
   'gap-top': (
     'items': $gorko-size-scale,
-    'output': 'responsive',
+    'output': 'standard',
     'property': 'margin-top'
   ),
   'leading': (
@@ -82,13 +82,20 @@ $gorko-config: (
       'short': '40ch',
       'long': '65ch'
     ),
-    'output': 'responsive',
+    'output': 'standard',
     'property': 'max-width'
   ),
   'text': (
     'items': $gorko-size-scale,
-    'output': 'responsive',
+    'output': 'standard',
     'property': 'font-size'
+  ),
+  'tt': (
+    'items': (
+      'upper': 'uppercase'
+    ),
+    'output': 'standard',
+    'property': 'text-transform'
   ),
   'breakpoints': (
     'md': '(min-width: 37em)',
