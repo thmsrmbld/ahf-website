@@ -149,10 +149,12 @@ marquee {
 }
 
 // Import compositions
+@import 'compositions/blog-landing-page';
 @import 'compositions/contact-page';
 @import 'compositions/headline';
 @import 'compositions/hero';
 @import 'compositions/landing-page';
+@import 'compositions/sidebar';
 @import 'compositions/splitter';
 
 // Import decorative stuff
@@ -167,6 +169,7 @@ marquee {
 @import 'blocks/eyebrow';
 @import 'blocks/form-group';
 @import 'blocks/link-button';
+@import 'blocks/post-item';
 @import 'blocks/site-foot';
 @import 'blocks/site-head';
 @import 'blocks/skip-link';
