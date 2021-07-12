@@ -1,0 +1,15 @@
+.splitter {
+  flex-wrap: wrap;
+
+  &,
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: $global-gutter;
+  }
+
+  &__group {
+    min-width: 12.5rem;
+  }
+}

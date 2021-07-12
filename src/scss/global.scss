@@ -132,6 +132,7 @@ marquee {
 @import 'compositions/headline';
 @import 'compositions/hero';
 @import 'compositions/landing-page';
+@import 'compositions/splitter';
 
 // Import decorative stuff
 @import 'decor/tv-decor';
@@ -150,6 +151,7 @@ marquee {
 // Import utilities
 @import 'utilities/dot';
 @import 'utilities/flow';
+@import 'utilities/line-highlight';
 @import 'utilities/visually-hidden';
 @import 'utilities/wrapper';
 
