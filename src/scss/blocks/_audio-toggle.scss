@@ -1,0 +1,8 @@
+.audio-toggle {
+  // These are because the link button get's higher specificity by proxy
+  // of source order, so we get an !important, rather than a hacky selector
+  display: inline-flex !important;
+  text-decoration: none !important;
+  align-items: center;
+  gap: 0.5rem;
+}
