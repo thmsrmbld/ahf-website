@@ -18,4 +18,10 @@
       text-decoration: none;
     }
   }
+
+  .circle-text {
+    position: absolute;
+    right: 0;
+    transform: translateY(-70%);
+  }
 }

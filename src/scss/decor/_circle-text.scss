@@ -1,9 +1,9 @@
 .circle-text {
   text-transform: uppercase;
-  font-size: 3.5rem; // We're using rems because SVG aint diggin' clamp
-  width: 12rem;
-  height: 12rem;
-  transform: rotate(45deg);
+  font-size: 43px; // We're using px because SVG aint diggin' clamp
+  width: 14rem;
+  height: 14rem;
+  transform: rotate(70deg);
 
   @include apply-utility('font', 'mono');
 

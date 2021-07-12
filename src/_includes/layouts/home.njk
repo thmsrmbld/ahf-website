@@ -1,17 +1,5 @@
 {% extends "layouts/base.njk" %} 
 
-{% macro circleText(text, id) %}
-<svg class="[ circle-text ] [ box-hidden md:box-block ]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
-  <defs>
-    <path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="{{ id }}">
-    </path>
-  </defs>
-  <text textLength="1220">
-    <textPath xlink:href="#{{ id }}">{{ text }}</textPath>
-  </text>
-</svg>
-{% endmacro %}
-
 {% block content %}
 <div class="wrapper">
   <article class="hero">
