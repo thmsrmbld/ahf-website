@@ -11,5 +11,6 @@
 
   &__group {
     min-width: 12.5rem;
+    gap: clamp(#{$global-gutter}, 5rem, 10rem);
   }
 }

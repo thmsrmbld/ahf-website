@@ -6,6 +6,15 @@ module.exports = config => {
   config.addPassthroughCopy('./src/js');
   config.addPassthroughCopy('./src/images');
 
+  config.setBrowserSyncConfig({
+    callbacks: {
+      ghostMode: {
+        clicks: false,
+        forms: false,
+        scroll: false
+      }
+    }
+  });
   return {
     markdownTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',
