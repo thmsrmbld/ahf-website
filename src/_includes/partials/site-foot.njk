@@ -1,17 +1,22 @@
 <footer role="contentinfo" class="[ site-foot ] [ text-300 bg-primary ]">
+  {% if siteFootDecor != false %}
   <div class="wrapper">
     {{ circleText('Signals in the static, communiques in the attic', 'footer-circle')}}
   </div>
+  {% endif %}
  
   <!-- CTA starts -->
   <!-- If you want to turn this CTA on and off, here's the wrapper for it -->
+  {% if siteFootCTA != false %}
   <div class="[ site-foot__cta ] [ wrapper ] [ flow ]">
     <h2 class="text-800">Let’s talk.</h2> 
     <p class="flow-space-300 font-mono text-400">The future is human.</p>
     <div><a href="/contact" class="[ button ] [ text-500 border-light ]">Booking new work!</a></div>
     <div><a class="font-mono text-400" href="mailto:{{ site.email }}">{{ site.email }}</a></div>
   </div>
+  {% endif %}
   <!-- CTA ends -->
+
   <div class="[ site-foot__inner ] [ splitter ] [ wrapper ]">
     <div class="line-highlight" data-position="top">
       <a href="/" class="brand">

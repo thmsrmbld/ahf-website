@@ -99,6 +99,14 @@ $gorko-config: (
     'output': 'standard',
     'property': 'max-width'
   ),
+  'ta': (
+    'items': (
+      'center': 'center',
+      'right': 'right'
+    ),
+    'output': 'standard',
+    'property': 'text-align'
+  ),
   'text': (
     'items': $gorko-size-scale,
     'output': 'standard',
