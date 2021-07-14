@@ -2,7 +2,22 @@
   padding: 0 0 get-size('800') 0;
 
   &__featured {
-    position: sticky;
-    top: get-size('600');
+    img {
+      max-height: 60vh;
+      object-fit: cover;
+    }
+  }
+
+  &__sidebar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__items {
+    flex-basis: 0;
+    flex-grow: 1;
+    overflow-y: auto;
+    position: relative;
+    min-height: 50vh;
   }
 }
