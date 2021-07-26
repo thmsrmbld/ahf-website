@@ -6,7 +6,7 @@
   "scripts": {
     "sass:process": "sass src/scss/global.scss dist/css/global.css",
     "sass:watch": "npm run sass:process -- --watch",
-    "start": "npm run sass:process && concurrently 'npm run sass:watch' 'npx eleventy --serve --quiet'",
+    "start": "npm run sass:process && concurrently 'npm run sass:watch' 'eleventy --serve --quiet'",
     "production": "NODE_ENV=production npx gulp && NODE_ENV=production eleventy"
   },
   "keywords": [],
