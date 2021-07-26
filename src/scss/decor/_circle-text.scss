@@ -10,4 +10,17 @@
   text {
     fill: get-color('secondary');
   }
+
+  @media (prefers-reduced-motion: no-preference) {
+    animation: circle-spin 5000ms linear infinite;
+  }
+}
+
+@keyframes circle-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
