@@ -19,7 +19,21 @@ permalink: '/index.html'
     </div>
     <footer class="hero__footer">
       <p class="font-mono color-primary text-300" aria-hidden="true" role="presentation">CBG & LDN & BER<sup>[2]</sup></p>
-      <button class="[ link-button ] [ text-300 box-hidden md:box-inline-block ]">Launch Terminal _></button>
+      <button class="[ link-button ] [ text-300 box-hidden md:box-inline-block ]" data-terminal="mainTerminal">Launch Terminal _></button>
+      <dialog class="terminal" id="mainTerminal">
+        <div class="[ terminal__inner ] [ flow ] [ flow-space-300 ]">
+          <div class="[ terminal__header ] [ splitter ]">
+            <div class="[ brand ] [ text-300 ]" role="presentation" aria-hidden="true">
+              <span class="dot color-primary" role="presentation"></span>
+              <span>{{ site.name }}</span>
+            </div>
+            <button class="[ link-button ] [ font-mono text-300 color-primary ]" value="cancel">Close [x]</button>
+          </div>
+          <div class="text-300">
+            Tom pop ur terminal in here m8
+          </div>
+        </div>
+      </dialog>
     </footer>
   </article>
 </div>
