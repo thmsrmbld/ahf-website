@@ -99,6 +99,11 @@ $gorko-config: (
     'output': 'standard',
     'property': 'max-width'
   ),
+  'pad-bottom': (
+    'items': $gorko-size-scale,
+    'output': 'standard',
+    'property': 'padding-bottom'
+  ),
   'ta': (
     'items': (
       'center': 'center',

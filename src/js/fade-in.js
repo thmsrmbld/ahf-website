@@ -11,7 +11,6 @@
       changes.forEach(change => {
         if (change.intersectionRatio > 0) {
           timeout += 100;
-          console.log(timeout);
           setTimeout(() => {
             change.target.setAttribute('data-state', 'visible');
           }, timeout);

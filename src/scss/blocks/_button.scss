@@ -4,7 +4,7 @@
   --button-stroke: #{get-color('secondary')};
 
   display: inline-block;
-  border: 1px solid var(--button-stroke);
+  border: 2px solid var(--button-stroke);
   background: var(--button-bg);
   color: var(--button-text);
   border-radius: 50%;
