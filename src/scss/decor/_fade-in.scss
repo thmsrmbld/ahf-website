@@ -1,8 +1,7 @@
 .fade-in {
   @media (prefers-reduced-motion: no-preference) {
     &[data-state='visible'] {
-      transition: transform 700ms $global-bezier 500ms,
-        opacity 1000ms $global-bezier 800ms;
+      transition: transform 700ms $global-bezier, opacity 1000ms $global-bezier 300ms;
     }
 
     &[data-state='hidden'] {
