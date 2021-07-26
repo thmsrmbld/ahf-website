@@ -159,9 +159,10 @@ marquee {
 @import 'compositions/splitter';
 
 // Import decorative stuff
-@import 'decor/fade-in';
-@import 'decor/tv-decor';
 @import 'decor/circle-text';
+@import 'decor/fade-in';
+@import 'decor/glitch-text';
+@import 'decor/tv-decor';
 
 // Import blocks
 @import 'blocks/audio-toggle';

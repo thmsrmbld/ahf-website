@@ -2,4 +2,6 @@
   display: flex;
   align-items: baseline;
   gap: get-size('400');
+
+  @include apply-utility('leading', 'flat');
 }

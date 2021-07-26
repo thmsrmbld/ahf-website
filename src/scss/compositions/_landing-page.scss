@@ -28,12 +28,12 @@
     }
 
     // Makes the techo babble bit indented
-    .headline span:not([class]) {
+    .headline span {
       display: inline-block;
     }
 
-    .headline span:not([class]):last-child {
-      margin-inline-start: 2em;
+    .headline span:last-child {
+      margin-inline-start: 1ch;
     }
   }
 
