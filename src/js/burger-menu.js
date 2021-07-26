@@ -36,6 +36,10 @@ class BurgerMenu extends HTMLElement {
     return this.getAttribute('nav-count') || '';
   }
 
+  get theme() {
+    return this.getAttribute('theme') || '';
+  }
+
   connectedCallback() {
     this.initialMarkup = this.innerHTML;
     this.render();
@@ -61,7 +65,7 @@ class BurgerMenu extends HTMLElement {
 
   render() {
     this.innerHTML = `
-      <div class="burger-menu" data-element="burger-root">
+      <div class="burger-menu" data-element="burger-root" data-theme="${this.theme}">
         <button class="[ burger-menu__trigger ] [ link-button ]" data-element="burger-menu-trigger" type="button" aria-label="Open menu">
           ${this.getTriggerLabel()}
         </button>

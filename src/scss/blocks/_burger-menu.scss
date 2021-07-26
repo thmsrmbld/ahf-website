@@ -91,6 +91,18 @@ burger-menu {
   }
 }
 
+.burger-menu[status][data-theme='secondary'] {
+  .burger-menu__panel {
+    background: get-color('secondary');
+    color: get-color('light');
+
+    a:not(:hover),
+    a:hover {
+      color: get-color('light');
+    }
+  }
+}
+
 // The burger menu parent that has data-burger-menu-status is likely the <body> element.
 // It is the element that will shift left when the burger menu opens
 [data-burger-menu-status] {

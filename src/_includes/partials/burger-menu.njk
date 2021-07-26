@@ -1,4 +1,7 @@
-<burger-menu nav-count="{{ navigation.items | length }}" class="wrapper">
+{% if page.url == '/contact/' %}
+  {% set theme = 'secondary' %}
+{% endif %}
+<burger-menu nav-count="{{ navigation.items | length }}" class="wrapper" theme="{{ theme }}">
   <nav aria-label="primary">
     <ul role="list" class="burger-menu__nav">
       {% for item in navigation.items %}
