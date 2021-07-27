@@ -49,6 +49,15 @@ burger-menu {
     nav {
       position: sticky;
       top: get-size('600');
+
+      a {
+        width: max-content;
+      }
+
+      a:focus {
+        outline-color: get-color('light');
+        outline-offset: 8px;
+      }
     }
   }
 
