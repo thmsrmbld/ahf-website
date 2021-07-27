@@ -10,7 +10,15 @@
     > p {
       position: relative;
       z-index: 1;
-      white-space: nowrap;
+      font-size: get-size('400');
+      min-inline-size: 12rem;
+
+      @include apply-utility('font', 'mono');
+
+      &:not([lang='en']) {
+        font-size: get-size('500');
+        white-space: nowrap;
+      }
 
       &::after {
         content: '';
