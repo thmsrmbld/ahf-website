@@ -115,7 +115,7 @@ burger-menu {
 // The burger menu parent that has data-burger-menu-status is likely the <body> element.
 // It is the element that will shift left when the burger menu opens
 [data-burger-menu-status] {
-  --burger-menu-width: calc(100% - 10vw);
+  --burger-menu-width: calc(100% - 25vw);
   transition: transform $burger-menu-transition $global-bezier;
 }
 
