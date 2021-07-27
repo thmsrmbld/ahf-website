@@ -139,7 +139,8 @@ marquee {
   li + li::before {
     content: '·';
     color: get-color('secondary');
-    font-size: 2em;
+    font-size: 4em;
+    transform: translateY(-0.025ex);
   }
 }
 
