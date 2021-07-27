@@ -9,8 +9,10 @@
     gap: $global-gutter;
   }
 
-  &__group {
-    min-width: 15rem;
-    gap: clamp(#{$global-gutter}, 5rem, 10rem);
+  @include media-query('md') {
+    &__group {
+      min-width: 15rem;
+      gap: clamp(#{$global-gutter}, 5rem, 10rem);
+    }
   }
 }
